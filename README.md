@@ -20,18 +20,9 @@ A backend service that aggregates flight search results from multiple airline pr
 - **Go 1.21+** (the project uses Go 1.26.5 as declared in `go.mod`)
 - No external dependencies — standard library only
 
-Optional (for live-reload during development):
-- [Air](https://github.com/air-verse/air) — `go install github.com/air-verse/air@latest`
-
 ---
 
 ## Setup & Run
-
-### 1. Clone / navigate to the project
-
-```bash
-cd "BookCabin Take Home Test - Software Engineer (Backend)/app"
-```
 
 ### 2. Run directly
 
@@ -54,15 +45,7 @@ go build -o flight-aggregator ./cmd/api
 ./flight-aggregator
 ```
 
-### 4. Live-reload with Air (optional)
 
-```bash
-air
-```
-
-Air reads `.air.toml` at the project root and automatically rebuilds on file changes.
-
----
 
 ## API Usage
 
@@ -236,7 +219,6 @@ app/
 │       ├── airport.go           # IATA code → city name lookup
 │       ├── timezone.go          # Duration formatter
 │       └── utils_test.go        # Utils unit tests
-├── .air.toml                    # Live-reload config for Air
 └── go.mod                       # Module: app, Go 1.26.5, zero external deps
 ```
 

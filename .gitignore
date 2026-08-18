@@ -1,0 +1,12 @@
+# Live-reload temporary files and configs
+tmp/
+.air.toml
+
+# Go binaries and testing files
+*.exe
+*.test
+*.prof
+*.out
+
+# OS files
+.DS_Store
